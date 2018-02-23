@@ -19,7 +19,7 @@ double degreemath::cos(double degree) {
 //zamiana stopni na radiany: pi radianów = 180 stopni
 //return std::sin(radian); //funkcja biblioteczna z piku <cmath>
 	double rad = convertToRad(degree);
-	return std::sin(rad);
+	return std::cos(rad);
 }
 
 
@@ -27,7 +27,7 @@ double degreemath::tg(double degree) {
 //zamiana stopni na radiany: pi radianów = 180 stopni
 //return std::sin(radian); //funkcja biblioteczna z piku <cmath>
 	double rad = convertToRad(degree);
-	return std::sin(rad);
+	return std::tan(rad);
 }
 
 
@@ -35,5 +35,5 @@ double degreemath::ctg(double degree) {
 //zamiana stopni na radiany: pi radianów = 180 stopni
 //return std::sin(radian); //funkcja biblioteczna z piku <cmath>
 	double rad = convertToRad(degree);
-	return std::sin(rad);
+	return 1/std::tan(rad);
 }
