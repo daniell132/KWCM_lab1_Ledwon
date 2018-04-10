@@ -1,6 +1,9 @@
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.1)
 
 project (PierwszyProgram)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 add_executable(Laborka main.cpp)
 
 option (USE_TRIGONOMETRY_DEGREE
@@ -17,7 +20,6 @@ configure_file (
 "${PROJECT_BINARY_DIR}/LaborkaConfig.h"
 )
 include_directories("${PROJECT_BINARY_DIR}")
-
 
 enable_testing()
 add_test (LaborkaPodstawowyTest Laborka)
